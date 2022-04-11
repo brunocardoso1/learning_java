@@ -24,7 +24,7 @@ public class Conta
         if(this.saldo >= valor){
             this.saldo -= valor;
             destino.deposita(valor);
-            System.out.println("Transferencia de " +valor+ " para " + destino.titular.nome + " concluida!");
+            System.out.println("Transferencia de " +valor+ " para " + destino.titular.getNome() + " concluida!");
             return true;
         } else {
             System.out.println("Seu saldo atual é menor que valor desejado da transferencia.");
@@ -44,5 +44,11 @@ public class Conta
         this.numero = numero;
     }
 
+    public void setTitular(Cliente titular){
+        this.titular = titular;
+    }
 
+    public Cliente getTitular() {
+        return titular;
+    }
 }
