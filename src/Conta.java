@@ -1,9 +1,9 @@
 public class Conta
 {
-    double saldo;
-    int agencia;
-    int numero;
-    Cliente titular = new Cliente();
+    private double saldo;
+    private int agencia;
+    private int numero;
+    private Cliente titular = new Cliente();
 
     void deposita(double valor ){
         this.saldo += valor;
@@ -32,8 +32,16 @@ public class Conta
         }
     }
 
-    public void consultaSaldo(){
+    public void getSaldo(){
         System.out.println("Seu saldo atual eh de: " + this.saldo);
+    }
+
+    public int getNumero(){
+        return this.numero;
+    }
+
+    public void setNumero(int numero){
+        this.numero = numero;
     }
 
 

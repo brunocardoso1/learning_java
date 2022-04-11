@@ -6,12 +6,10 @@ public class TestaMetodo {
 
         contaBruno.deposita(100);
         contaPenha.deposita(100);
-        contaBruno.titular.nome = "Bruno Cardoso";
-        contaPenha.titular.nome = "Maria da Penha";
 
         contaBruno.transfere(10, contaPenha);
-        contaBruno.consultaSaldo();
-        contaPenha.consultaSaldo();
+        contaBruno.getSaldo();
+        contaPenha.getSaldo();
 
     }
 }

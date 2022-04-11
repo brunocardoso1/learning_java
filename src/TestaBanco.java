@@ -9,9 +9,6 @@ public class TestaBanco {
         Conta contaPaulo = new Conta();
         contaPaulo.deposita(100);
 
-        contaPaulo.titular = paulo;
-
-        System.out.println(contaPaulo.titular.nome);
 
     }
 }
