@@ -32,6 +32,15 @@ public class Conta
         }
     }
 
+    public void setAgencia(int agencia) {
+        if(agencia >= 0) {
+            this.agencia = agencia;
+        } else {
+            System.out.println("Não é possivel definir a agencia com numero negativo");
+        }
+
+    }
+
     public void getSaldo(){
         System.out.println("Seu saldo atual eh de: " + this.saldo);
     }
